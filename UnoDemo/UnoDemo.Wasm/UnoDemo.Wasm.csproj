@@ -42,7 +42,10 @@
     <!--<PackageReference Include="Uno.UI" Version="1.43.0-dev.667" />-->
     <PackageReference Include="Uno.UI" Version="1.43.0-dev.675" />
     <PackageReference Include="Uno.Wasm.Bootstrap" Version="1.0.0-dev.147" />
-    <DotNetCliToolReference Include="Uno.Wasm.Bootstrap.Cli" Version="1.0.0-dev.112" />
+    <DotNetCliToolReference Include="Uno.Wasm.Bootstrap.Cli" Version="1.0.0-dev.134" />
   </ItemGroup>
   <Import Project="..\UnoDemo.Shared\UnoDemo.Shared.projitems" Label="Shared" Condition="Exists('..\UnoDemo.Shared\UnoDemo.Shared.projitems')" />
+  <Target Name="PreBuild" BeforeTargets="PreBuildEvent">
+    <Exec Command="for /d %%a in ($(SolutionDir)UnoDemo\UnoDemo.Wasm\bin\Debug\netstandard2.0\dist\managed-*) do rd %%a /s /q&#xD;&#xA;" />
+  </Target>
 </Project>
