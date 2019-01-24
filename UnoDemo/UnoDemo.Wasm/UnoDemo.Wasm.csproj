@@ -40,8 +40,8 @@
   </ItemGroup>
   <ItemGroup>
     <!--<PackageReference Include="Uno.UI" Version="1.43.0-dev.667" />-->
-    <PackageReference Include="Uno.UI" Version="1.43.0-dev.680" />
-    <PackageReference Include="Uno.Wasm.Bootstrap" Version="1.0.0-dev.147" />
+    <PackageReference Include="Uno.UI" Version="1.43.0-dev.702" />
+    <PackageReference Include="Uno.Wasm.Bootstrap" Version="1.0.0-dev.151" />
     <DotNetCliToolReference Include="Uno.Wasm.Bootstrap.Cli" Version="1.0.0-dev.134" />
   </ItemGroup>
   <Import Project="..\UnoDemo.Shared\UnoDemo.Shared.projitems" Label="Shared" Condition="Exists('..\UnoDemo.Shared\UnoDemo.Shared.projitems')" />
